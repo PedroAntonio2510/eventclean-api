@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: EventCleanDB
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: eventcleandb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5431:5432"
